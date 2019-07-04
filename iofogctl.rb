@@ -6,8 +6,8 @@ class Iofogctl < Formula
   version "1.0.0"
   devel do
     url "http://edgeworx.io/downloads/iofogctl/iofogctl-dev.tar.gz"
-    sha256 "d7f70710d8938b537c8aa94a3ab9a8dff2dc3c867b8d080f5e5640c1785760f2"
-    version "1.0.0-b1880"
+    sha256 "72cc3e593cc62bfcabef8f874834fd2d70aa09a802844ad9efdce2978baee660"
+    version "1.0.0-b1892"
   end
 
   depends_on "curl"
