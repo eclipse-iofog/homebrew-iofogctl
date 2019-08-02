@@ -19,17 +19,18 @@ class Iofogctl < Formula
     bin.install "iofogctl"
   end
 
-  def post_install
-    # Generate bash autocomplete
-    system ("iofogctl autocomplete bash")
-    system ("source $HOME/.iofog/completion.bash.sh")
+  # Not working due to post install not authorized to write file on the system
+  # def post_install
+  #   # Generate bash autocomplete
+  #   system ("iofogctl autocomplete bash")
+  #   system ("source $HOME/.iofog/completion.bash.sh")
 
-    profileFile = ENV["HOME"] + "/.bash_profile"
-    if File.readlines(profileFile).grep(/# iofogctl autocompletion/).size == 0
-      # Add iofogctl autocompletion to bash_profile
-      system ("echo \"\" >> " + profileFile)
-      system ("echo \"# iofogctl autocompletion\" >> " + profileFile)
-      system ("echo \"source " + ENV["HOME"] + "/.iofog/completion.bash.sh\" >> " + profileFile)
-    end
-  end
+  #   profileFile = ENV["HOME"] + "/.bash_profile"
+  #   if File.readlines(profileFile).grep(/# iofogctl autocompletion/).size == 0
+  #     # Add iofogctl autocompletion to bash_profile
+  #     system ("echo \"\" >> " + profileFile)
+  #     system ("echo \"# iofogctl autocompletion\" >> " + profileFile)
+  #     system ("echo \"source " + ENV["HOME"] + "/.iofog/completion.bash.sh\" >> " + profileFile)
+  #   end
+  # end
 end
