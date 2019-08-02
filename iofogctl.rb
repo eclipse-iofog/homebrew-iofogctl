@@ -11,10 +11,22 @@ class Iofogctl < Formula
   end
 
   depends_on "curl"
+  depends_on "bash-completion"
 
   bottle :unneeded
 
   def install
     bin.install "iofogctl"
+    # Generate bash autocomplete
+    system "iofogctl autocomplete bash"
+    system "source $HOME/.iofog/completion.bash.sh"
+
+    profileFile = ENV["HOME"] + "/.bash_profile"
+    if File.readlines(profileFile).grep(/# iofogctl autocompletion/).size == 0
+      # Add iofogctl autocompletion to bash_profile
+      system "echo \"\" >> " + profileFile
+      system "echo \"# iofogctl autocompletion\" >> " + profileFile
+      system "echo \"source " + ENV["HOME"] + "/.iofog/completion.bash.sh\" >> " + profileFile
+    end
   end
 end
