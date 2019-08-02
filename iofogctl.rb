@@ -18,7 +18,7 @@ class Iofogctl < Formula
   def install
     bin.install "iofogctl"
     # Generate bash autocomplete
-    system "iofogctl autocomplete bash"
+    system "./bin/iofogctl autocomplete bash"
     system "source $HOME/.iofog/completion.bash.sh"
 
     profileFile = ENV["HOME"] + "/.bash_profile"
