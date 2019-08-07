@@ -5,9 +5,9 @@ class Iofogctl < Formula
   sha256 "05de6bcd46791419bd05d39bc17cf23edbb474034d23018215926f0f3a0645b3"
   version "1.2.2"
   devel do
-    url "http://edgeworx.io/downloads/iofogctl/dev/1.2.2-b2942.tar.gz"
-    sha256 "048c2a541e0a1254c69f011082124eced5a51b1d906f457bd53a07028f4ab90e"
-    version "1.2.2-b2942"
+    url "http://edgeworx.io/downloads/iofogctl/dev/1.2.2-b2951.tar.gz"
+    sha256 "9a7f48a10a19bac2ae02e5db1f104992e23394cece6f3a586011eb458a9db6b8"
+    version "1.2.2-b2951"
   end
 
   depends_on "curl"
