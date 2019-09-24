@@ -1,9 +1,9 @@
 class Iofogctl < Formula
   desc "Command line tool for deploying and administering ioFog platforms"
   homepage "https://github.com/eclipse-iofog/iofogctl"
-  url "http://edgeworx.io/downloads/iofogctl/rel/1.3.0-rc1.tar.gz"
-  sha256 "231efac7bbc1ce1df16cecfa986c787a70934201e6d66e3661fddd8dac44a4d6"
-  version "1.3.0-rc1"
+  url "http://edgeworx.io/downloads/iofogctl/rel/1.3.0-rc2.tar.gz"
+  sha256 "896f636ff994c3c611e35144085a08088f59b8fc93f6418fb0215d5fb75bc077"
+  version "1.3.0-rc2"
   devel do
     url "http://edgeworx.io/downloads/iofogctl/dev/1.3.0-rc2.tar.gz"
     sha256 "896f636ff994c3c611e35144085a08088f59b8fc93f6418fb0215d5fb75bc077"
