@@ -1,4 +1,4 @@
-class IofogctlAT125 < Formula
+class IofogctlAT12 < Formula
   desc "Command line tool for deploying and administering ioFog platforms"
   homepage "https://github.com/eclipse-iofog/iofogctl"
   url "http://edgeworx.io/downloads/iofogctl/rel/1.2.5.tar.gz"
