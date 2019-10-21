@@ -6,7 +6,7 @@ class IofogctlAT13 < Formula
   version "1.3.0-beta"
   devel do
     url "http://edgeworx.io/downloads/iofogctl/dev/1.3.0-dev.tar.gz"
-    sha256 "88e68c8da1265deaa62e640905db540895081f75617d37c2c0c4e8a53f70e24d"
+    sha256 "1d7d75ac540acd0e6d87010846ef6941c20fe604c17e072be5f13a34fbd2d58b"
     version "1.3.0-dev"
   end
 
