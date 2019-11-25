@@ -5,8 +5,8 @@ class IofogctlAT13 < Formula
   sha256 "c04f1b850992d3734c6e8611e40db85ba1a014c577432e71a34535d07d4c3e02"
   version "1.3.0"
   devel do
-    url "https://storage.cloud.google.com/iofogctl/osx/1.3/dev/iofogctl.tar.gz"
-    sha256 "18c2d79fb08e87bc2fd7435fdd957ac4e54b1d289683879fd5047aa9fbb266ca"
+    url "https://storage.cloud.google.com/iofogctl/osx/dev/1.3/iofogctl.tar.gz"
+    sha256 "45d773f400ab56092be98892332b2b7c8592642f3f3e945e26f731fcb6f9ec42"
     version "1.3.0-dev"
   end
 
