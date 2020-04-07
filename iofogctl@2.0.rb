@@ -6,7 +6,7 @@ class IofogctlAT20 < Formula
   version "2.0.0-beta3"
   devel do
     url "https://storage.googleapis.com/iofogctl/osx/dev/2.0/iofogctl.tar.gz"
-    sha256 "85d0e28ae100b466900f2a4748cdd99ff4e955eb041933cd6eb2a42b11300c3c"
+    sha256 "cbd33219c33f716ec5893dd9ccc5ca198bbc028a5c2e610bc39d7207d9a7805f"
     version "2.0.0-dev"
   end
 
