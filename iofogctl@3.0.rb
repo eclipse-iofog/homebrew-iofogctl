@@ -1,4 +1,4 @@
-class IofogctlAT30Devel < Formula
+class IofogctlAT30 < Formula
   desc "Command line tool for deploying and administering ioFog platforms"
   homepage "https://github.com/eclipse-iofog/iofogctl"
   url "https://storage.googleapis.com/iofogctl/osx/3.0.0/iofogctl.tar.gz"
