@@ -2,8 +2,8 @@ class IofogctlAT30Devel < Formula
   desc "Command line tool for deploying and administering ioFog platforms"
   homepage "https://github.com/eclipse-iofog/iofogctl"
   url "https://storage.googleapis.com/iofogctl/osx/dev/3.0.0/iofogctl.tar.gz"
-  sha256 "663d5c35f27e6a3990040976c7615e9eae8b4dd7977b6b9acbfd745645d66fb3"
-  version "3.0.0-beta3-b16928"
+  sha256 "5432e4d2ce2fd32e39d3f6ab460c813c614c32dccc1302d42b9e7a7d648175cf"
+  version "3.0.0-dev-b16959"
 
   depends_on "curl"
   depends_on "bash-completion"
