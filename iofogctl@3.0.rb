@@ -8,8 +8,6 @@ class IofogctlAT30 < Formula
   depends_on "curl"
   depends_on "bash-completion"
 
-  bottle :unneeded
-
   def install
     bin.install "iofogctl"
   end
