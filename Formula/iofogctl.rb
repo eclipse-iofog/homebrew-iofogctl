@@ -5,20 +5,20 @@
 class Iofogctl < Formula
   desc "CLI for ioFog"
   homepage "https://github.com/eclipse-iofog/iofogctl"
-  version "3.9.0-rc.4"
+  version "3.9.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/eclipse-iofog/iofogctl/releases/download/v3.9.0-rc.4/iofogctl_3.9.0-rc.4_macos_amd64.tar.gz"
-      sha256 "17afd222c63c91f10e759f86f66f08ed82b44b88335acbce51ccea19aa77cf78"
+      url "https://github.com/eclipse-iofog/iofogctl/releases/download/v3.9.0/iofogctl_3.9.0_macos_amd64.tar.gz"
+      sha256 "47ebb956c206a64c8d90980688924cf1bf8f1c2ce8c9c4945e475937bbbdb6c9"
 
       define_method(:install) do
         bin.install "iofogctl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/eclipse-iofog/iofogctl/releases/download/v3.9.0-rc.4/iofogctl_3.9.0-rc.4_macos_arm64.tar.gz"
-      sha256 "0298692444f0144d54dcd90a996693cf05d0f8424f0d4a0219821aa4287369fc"
+      url "https://github.com/eclipse-iofog/iofogctl/releases/download/v3.9.0/iofogctl_3.9.0_macos_arm64.tar.gz"
+      sha256 "d1e2d3efe59bfe8b08bb5c65278ba0277126dec437935de90a2f3a815675ee29"
 
       define_method(:install) do
         bin.install "iofogctl"
@@ -28,22 +28,22 @@ class Iofogctl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/eclipse-iofog/iofogctl/releases/download/v3.9.0-rc.4/iofogctl_3.9.0-rc.4_amd64.tar.gz"
-      sha256 "d18572db50adadd9eb4f16cc236e1244096d29b3215b06298e8349f20cbc9d3d"
+      url "https://github.com/eclipse-iofog/iofogctl/releases/download/v3.9.0/iofogctl_3.9.0_amd64.tar.gz"
+      sha256 "ca0aa7e0d219db01490255b5da1b35272be8b6e4a51aa3991cf69e83af35faf8"
       define_method(:install) do
         bin.install "iofogctl"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/eclipse-iofog/iofogctl/releases/download/v3.9.0-rc.4/iofogctl_3.9.0-rc.4_armv6.tar.gz"
-      sha256 "1bbfd82461862e2850c364c2642c62d51ccac1d6b238f418d15ef1e545c12906"
+      url "https://github.com/eclipse-iofog/iofogctl/releases/download/v3.9.0/iofogctl_3.9.0_armv6.tar.gz"
+      sha256 "2acf687060b557eacb561c97b1cd53b195c286b3c7f09c28e407cbdd63a6451c"
       define_method(:install) do
         bin.install "iofogctl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/eclipse-iofog/iofogctl/releases/download/v3.9.0-rc.4/iofogctl_3.9.0-rc.4_arm64.tar.gz"
-      sha256 "acdef8e2047d745994202d26a5c738613decc8980eaf0ffb2a3f5f33c10a6ef9"
+      url "https://github.com/eclipse-iofog/iofogctl/releases/download/v3.9.0/iofogctl_3.9.0_arm64.tar.gz"
+      sha256 "f5b30f72cc81a6a9e3ae057423a5b7e520dedf53898cc13e25fed7a6f4b4dbd4"
       define_method(:install) do
         bin.install "iofogctl"
       end
