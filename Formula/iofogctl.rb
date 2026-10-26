@@ -10,7 +10,7 @@ class Iofogctl < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/eclipse-iofog/iofogctl/releases/download/v3.9.2-rc.1/iofogctl_3.9.2-rc.1_macos_amd64.tar.gz"
-      sha256 "a566a3ca76a4ebd031e6f281cc1e9a6fa4ceca675b2596e4b5124bdec1b8a354"
+      sha256 "d902127f4a5a964c1bfc1b2ef7e04988a217ed3a1cf41ca18a3e664d0e22951a"
 
       define_method(:install) do
         bin.install "iofogctl"
@@ -18,7 +18,7 @@ class Iofogctl < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/eclipse-iofog/iofogctl/releases/download/v3.9.2-rc.1/iofogctl_3.9.2-rc.1_macos_arm64.tar.gz"
-      sha256 "6a7fcf503d54578d566f092b68d3364f36c9c4e0c71ddd19477b31a00f11f3a3"
+      sha256 "6fe2ce345077c10b52bf6449dbd388946f8cc3c4d788163539e1a6209b77617c"
 
       define_method(:install) do
         bin.install "iofogctl"
@@ -29,21 +29,21 @@ class Iofogctl < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/eclipse-iofog/iofogctl/releases/download/v3.9.2-rc.1/iofogctl_3.9.2-rc.1_amd64.tar.gz"
-      sha256 "af2976987182ab5757425c1d4a62b51d23bc4f011fab540e502594fa6b5f448f"
+      sha256 "720dbbfea3c14f1a3162fe8ddd7611eba513ed7fbd8c956c3a5b07ebe8230d33"
       define_method(:install) do
         bin.install "iofogctl"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
       url "https://github.com/eclipse-iofog/iofogctl/releases/download/v3.9.2-rc.1/iofogctl_3.9.2-rc.1_armv6.tar.gz"
-      sha256 "9bd36e04e6e20a283630cd8024a33e82c4229243a916a185692a4e819eb6c5dd"
+      sha256 "85756f0e165e6de853ab2bcec1594a3b2482c8417f9d8168efb6a5495769b76a"
       define_method(:install) do
         bin.install "iofogctl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/eclipse-iofog/iofogctl/releases/download/v3.9.2-rc.1/iofogctl_3.9.2-rc.1_arm64.tar.gz"
-      sha256 "316f163ee04a7b919014d165e0ac1f167d23cf777c377973621847fc5fe7bab0"
+      sha256 "b905f6cf5341b67d2b0e0c541c30261ae8dbfb4110a85fa2d0296e94921b3b52"
       define_method(:install) do
         bin.install "iofogctl"
       end
